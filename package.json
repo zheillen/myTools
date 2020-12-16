@@ -6,7 +6,9 @@
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "server": "webpack --watch --config server/webpack.config.js",
+    "startServer": "node server/dist/main.js"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -24,11 +26,15 @@
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.2.22",
     "behooks": "^0.3.0",
+    "koa": "^2.13.0",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "umi": "^3.2.22",
     "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.2.0"
   }
 }

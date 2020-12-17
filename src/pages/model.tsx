@@ -1,5 +1,5 @@
 import { getFiles } from '@/services/file';
-import { TreeNode } from 'antd/es/tree-select';
+// import { TreeNode } from 'antd/es/tree-select';
 import { Effect } from 'dva';
 import { Reducer } from 'redux';
 import { IGetFilesReturn } from '@/types/file';

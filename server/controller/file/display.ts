@@ -1,14 +1,17 @@
 import path from 'path';
 import fs from 'fs';
 import IContext from '../../types/context';
+import * as Koa from 'koa';
 
-export default async function display(ctx: IContext) {
+export default async function display(ctx: Koa.Context) {
+  console.log(ctx.response.body);
   const files = displayFiles(process.cwd());
-  try {
-    ctx.success(200, '获取成功', files);
-  } catch (err) {
-    ctx.error(0, err.message, null);
-  }
+  ctx.response.body = files;
+  //   try {
+  //     ctx.success(200, '获取成功', files);
+  //   } catch (err) {
+  //     ctx.error(0, err.message, null);
+  //   }
 }
 
 const ignoreFile = {

@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: './server/index.tsx',
+  entry: './server/index.ts',
   mode: 'development', // production
   target: 'node',
   output: {

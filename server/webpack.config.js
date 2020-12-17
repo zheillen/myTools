@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: './server/src/index.tsx',
+  entry: './server/index.tsx',
   mode: 'development', // production
   target: 'node',
   output: {
@@ -16,7 +16,7 @@ module.exports = {
       {
         // Include ts, tsx, js, and jsx files.
         test: /\.(ts|js)x?$/,
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
         loader: 'babel-loader',
       },
     ],

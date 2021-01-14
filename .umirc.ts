@@ -5,9 +5,13 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  routes: [{ path: '/', component: '@/pages/index' }],
+  // routes: [{ path: '/', component: '@/pages/index' }],
   // 布局插件
-  // layout: {},
+  // layout: {
+  // 	name: 'Ant Design',
+  // 	locale: true,
+  // 	layout: 'side',
+  // },
   // antd
   antd: {},
   // dva数据流

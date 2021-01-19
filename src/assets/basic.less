@@ -1,0 +1,77 @@
+.mr10 {
+  margin-right: 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.padding20 {
+  padding: 20px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.bg-w {
+  background: #fff;
+}
+
+//单行文本溢出
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis; //文本溢出显示省略号
+  white-space: nowrap; //文本不会换行（单行文本溢出）
+}
+
+//多行文本溢出
+.ellipsis-multi-row {
+  display: -webkit-box;
+  /*autoprefixer:off*/
+  -webkit-box-orient: vertical;
+  /*autoprefixer:on*/
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: ' ';
+  visibility: hidden;
+  height: 0;
+}
